@@ -1,17 +1,6 @@
-public class Dollar {
+public class Dollar extends Money {
 
-    int amount;
-
-    public Dollar(int amount) {
-        this.amount = amount;
-    }
-
-    Dollar times(int multiplayer) {
-        return new Dollar(amount * multiplayer);
-    }
-
-    public boolean equals(Object object) {
-        Dollar dollar = (Dollar) object;
-        return amount == dollar.amount;
+    public Dollar(int amount, String currency) {
+        super(amount, currency);
     }
 }
